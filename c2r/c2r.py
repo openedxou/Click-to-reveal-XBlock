@@ -3,7 +3,7 @@
 import pkg_resources
 
 from xblock.core import XBlock
-from xblock.fields import Scope, String
+from xblock.fields import Scope, Integer, String
 from xblock.fragment import Fragment
 ##from xblockutils.studio_editable import StudioEditableXBlockMixin
 
@@ -15,7 +15,7 @@ class Click2RevealXBlock(XBlock):
 
     # Fields are defined on the class.  You can access them in your code as
     # self.<fieldname>.
-    showactionlabel= String(default='Reveal ', scope=Scope.settings, 
+    showActionLabel= String(default='Reveal ', scope=Scope.settings, 
         help="The name of the action to show the text to the student.")
     hideActionLabel= String(default='Hide ', scope=Scope.settings, 
         help="The name of the action to show the text to the student.")

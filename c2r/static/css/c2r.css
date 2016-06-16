@@ -1,1 +1,5 @@
 /* CSS for Click2RevealXBlock */
+.c2r-comment{
+	display: none; 
+	margin-top: 15px;
+}

@@ -1,7 +1,10 @@
 /* Javascript for Click2RevealXBlock. */
 function Click2RevealXBlock(runtime, element) {
-
-    function revealComment(e) {
+    $(function ($) {
+        /* Here's where you'd do things on page load. */
+    });
+}
+ function revealComment(e) {
   var comment = $(e.target).parents('.c2r-container').find('.c2r-comment')[0];
   
   if (comment.style.display == 'block') {
@@ -17,9 +20,3 @@ function Click2RevealXBlock(runtime, element) {
    e.target.setAttribute('aria-expanded', 'true');
   }
  }
-
-
-    $(function ($) {
-        /* Here's where you'd do things on page load. */
-    });
-}

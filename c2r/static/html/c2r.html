@@ -1,5 +1,6 @@
+<div class="c2r-container"><button onclick="revealComment(event, '{self.textLabel}','{self.showActionLabel}','{self.hideActionLabel}')" aria-expanded="false">{self.showActionLabel}{self.textLabel}</button>
 <div class="c2r-comment" aria-hidden="true">
-<h3>{self.textLabel}</h3>
+<h{self.headingLevel}>{self.textLabel}</h{self.headingLevel}>
 {self.revealText}
 
 </div>

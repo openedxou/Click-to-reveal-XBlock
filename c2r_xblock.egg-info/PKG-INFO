@@ -3,5 +3,8 @@ Name: c2r-xblock
 Version: 0.1
 Summary: Click to reveal xblock
 Home-page: UNKNOWN
+Author: Matthew Harrington
+Author-email: Matthew.Harrington@open.ac.uk
 License: AGPL v3
+Description: A simple xblock that reveals some text
 Platform: UNKNOWN

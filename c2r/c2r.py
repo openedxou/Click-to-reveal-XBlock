@@ -27,6 +27,10 @@ class Click2RevealXBlock(XBlock):
         default="Here is some revealed text.", scope=Scope.settings,
         help="The text to reveal.",
     )
+    headingLevel = Integer(
+        default="1", scope=Scope.settings,
+        help="Heading level (enter a number)",
+    )
     # Make fields editable in studio?
     #editable_fields=('showActionLabel, hideActionLabel, textLabel, revealText')
 

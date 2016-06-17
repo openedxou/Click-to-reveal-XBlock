@@ -1,6 +1,6 @@
 /* Javascript for Click2RevealXBlock. */
 function C2RBlock(runtime, element, initargs) {
-    
+    /* Runtime stuff, nothing here for now */
 }
  function revealComment(e, textLabel, showActionLabel, hideActionLabel) {
   var comment = $(e.target).parents('.c2r-container').find('.c2r-comment')[0];

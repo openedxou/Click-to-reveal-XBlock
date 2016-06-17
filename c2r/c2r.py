@@ -15,24 +15,24 @@ class Click2RevealXBlock(StudioEditableXBlockMixin, XBlock):
 
     # Fields are defined on the class.  You can access them in your code as
     # self.<fieldname>.
-     display_name = String(default='Click to reveal')
-    showActionLabel= String(display_name="'Show' Action label", default="Reveal ", scope=Scope.settings, 
+    display_name = String(default='Click to reveal')
+    showActionLabel = String(display_name="'Show' Action label", default="Reveal ", scope=Scope.settings,
         help="The name of the action to show the text to the student.")
-    hideActionLabel= String(default="Hide ", scope=Scope.settings, 
+    hideActionLabel = String(default="Hide ", scope=Scope.settings,
         help="The name of the action to hide the text from the student.")
 
-    textLabel= String(display_name="'Hide' Action label", default="Comment", scope=Scope.settings,
+    textLabel = String(display_name="'Hide' Action label", default="Comment", scope=Scope.settings,
         help="The name of the text that is revealed, for example 'comment' or 'answer'. This will appear as a heading.")
-    headingLevel = Integer(display_name="Heading level", values=('2','3','4','5'),
+    headingLevel = Integer(display_name="Heading level", values=('2', '3', '4', '5'),
         default="3", scope=Scope.settings,
         help="Heading level (if this sits under another heading, pick one number lower)",
     )
     revealText = String(display_name="Text to reveal", multiline_editor='html', resettable_editor=False,
         default="Here is some revealed text.", scope=Scope.settings,
         help="The text to reveal.")
-    
+
     # Make fields editable in studio?
-    editable_fields=('showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', )
+    editable_fields = ('showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', )
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""

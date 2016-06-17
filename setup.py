@@ -4,6 +4,7 @@ import os
 from setuptools import setup
 
 
+
 def package_data(pkg, roots):
     """Generic function to find package_data.
 
@@ -30,6 +31,7 @@ setup(
     ],
     install_requires=[
         'XBlock',
+        'xblock-utils'
     ],
     entry_points={
         'xblock.v1': [

@@ -36,17 +36,35 @@ class Click2RevealXBlock(XBlock):
         return data.decode("utf8")
 
     def student_view(self, context=None):
+        html_str = pkg_resources.resource_string(__name__, "static/html/c2r.html")
+        frag = Fragment(unicode(html_str).format(self=self))
 
-        html = self.resource_string("static/html/c2r.html")
-        frag = Fragment(html.format(self=self))
-        frag.add_css(self.resource_string("static/css/c2r.css"))
-        frag.add_javascript(self.resource_string("static/js/src/c2r.js"))
-        frag.initialize_js('Click2Reveal')
+        # Load the CSS and JavaScript fragments from within the package
+        css_str = pkg_resources.resource_string(__name__, "static/css/c2r.css")
+        frag.add_css(unicode(css_str))
+
+        js_str = pkg_resources.resource_string(__name__,
+                                               "static/js/src/c2r.js")
+        frag.add_javascript(unicode(js_str))
+
+        frag.initialize_js('C2RBlock')
         return frag
+
 
     @staticmethod
     def workbench_scenarios():
         """A canned scenario for display in the workbench."""
         return [
-            ("Click to reveal", "<c2r/>"),
+            ("Click to reveal", """\
+                <vertical_demo>
+                    <c2r/>
+                    <c2r/>
+                    <c2r/>
+                </vertical_demo>
+             """),
         ]
+class C2RBlock(Click2RevealXBlock, XBlock):
+    """
+    A simple xblock to reveal html on click.
+    """
+    pass

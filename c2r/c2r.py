@@ -18,10 +18,10 @@ class Click2RevealXBlock(StudioEditableXBlockMixin, XBlock):
     display_name = String(display_name="Display name", default='Click to reveal')
     showActionLabel = String(display_name="'Show' Action label", default="Reveal ", scope=Scope.settings,
         help="The name of the action to show the text to the student.")
-    hideActionLabel = String(default="Hide ", scope=Scope.settings,
+    hideActionLabel = String(display_name="'Hide' Action label", default="Hide ", scope=Scope.settings,
         help="The name of the action to hide the text from the student.")
 
-    textLabel = String(display_name="'Hide' Action label", default="Comment", scope=Scope.settings,
+    textLabel = String(display_name="Text label", default="Comment", scope=Scope.settings,
         help="The name of the text that is revealed, for example 'comment' or 'answer'. This will appear as a heading.")
     headingLevel = Integer(display_name="Heading level", values=('2', '3', '4', '5'),
         default="3", scope=Scope.settings,

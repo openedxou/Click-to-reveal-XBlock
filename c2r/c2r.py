@@ -25,14 +25,14 @@ class Click2RevealXBlock(StudioEditableXBlockMixin, XBlock):
         help="The name of the text that is revealed, for example 'comment' or 'answer'. This will appear as a heading.")
     headingLevel = Integer(display_name="Heading level", values=('2', '3', '4', '5'),
         default="3", scope=Scope.settings,
-        help="Heading level (if this sits under another heading, pick one number lower)",
-    )
+        help="Heading level (if this sits under another heading, pick one number lower)")
     revealText = String(display_name="Text to reveal", multiline_editor='html', resettable_editor=False,
         default="Here is some revealed text.", scope=Scope.settings,
         help="The text to reveal.")
+    bgColour = String(display_name="Background colour", default = "#eef6ff", scope=Scope.settings, help="Background colour for the content.")
 
     # Make fields editable in studio?
-    editable_fields = ('showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', )
+    editable_fields = ('showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', 'bgColour' )
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""

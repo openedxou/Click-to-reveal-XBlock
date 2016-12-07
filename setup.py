@@ -23,7 +23,7 @@ def package_data(pkg, roots):
 
 setup(
     name='c2r-xblock',
-    version='0.1',
+    version='0.2',
     description='Click to reveal xblock',   
     license='AGPL v3',         
     packages=[
@@ -34,7 +34,7 @@ setup(
         'xblock-utils'
     ],
     entry_points={
-        'xblock.v1': [
+        'xblock.v2': [
             'c2r = c2r:Click2RevealXBlock',
         ]
     },

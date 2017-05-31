@@ -34,7 +34,7 @@ setup(
         'xblock-utils'
     ],
     entry_points={
-        'xblock.v2': [
+        'xblock.v1': [
             'c2r = c2r:Click2RevealXBlock',
         ]
     },

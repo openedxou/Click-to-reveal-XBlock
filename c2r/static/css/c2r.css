@@ -20,6 +20,7 @@
     display: block;
     color: #fff;
     background-color: #0075b4 !important;
+    background-image: none !important;
 }
 .c2r-button:focus {
     background: #065683;

@@ -32,7 +32,7 @@ class Click2RevealXBlock(StudioEditableXBlockMixin, XBlock):
     bgColour = String(display_name="Background colour", default = "#eef6ff", scope=Scope.settings, help="Background colour for the content.")
 
     # Make fields editable in studio
-    editable_fields = ('display_name', 'showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', 'bgColour')
+    editable_fields = ('display_name', 'showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', 'bgColour', )
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""

@@ -1,3 +1,5 @@
+**Warning: Currently non-functional**
+
 # Click-to-reveal-XBlock
 A basic XBlock to reveal some HTML when a button element is clicked. An Open edX 2016 Hackathon project.
 

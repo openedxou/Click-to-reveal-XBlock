@@ -35,7 +35,7 @@ setup(
     ],
     entry_points={
         'xblock.v1': [
-            'c2r = c2r:Click2RevealXBlock',
+            'c2r = c2r:click2revealxblock',
         ]
     },
     package_data=package_data("c2r", ["static", "public"]),

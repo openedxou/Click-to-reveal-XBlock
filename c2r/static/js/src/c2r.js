@@ -9,12 +9,12 @@ function revealDescription(e, showText, hideText) {
     if (comment.style.display == 'block') {
         comment.style.display = 'none';
         comment.setAttribute('aria-hidden', 'true');
-        e.target.textContent = showText;
+        e.target.textContent = '<i class="fa fa-eye" aria-hidden="true"></i>'+ showText;
         e.target.setAttribute('aria-expanded', 'false');
     } else {
         comment.style.display = 'block';
         comment.removeAttribute('aria-hidden');
-        e.target.textContent = hideText;
+        e.target.textContent = '<i class="fa fa-eye" aria-hidden="true"></i>'+ hideText;
         e.target.setAttribute('aria-expanded', 'true');
     }
 }

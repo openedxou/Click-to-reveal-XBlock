@@ -10,6 +10,8 @@ Available fields:
 
 This is to try and make the way the button displays as customisable as possible. It defaults to 'Reveal Comment' and 'Hide Comment'.
 
+Name for enabling in Studio: 'c2r-xblock'
+
 # Screenshots
 ## LMS
 ![LMS view](http://i.imgur.com/9HbMVQm.png)

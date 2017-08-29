@@ -1,17 +1,30 @@
-/* CSS for Click2RevealXBlock */
 .c2r-comment{
 	display: none; 
 	margin-top: 30px;
 }
 .c2r-container{
 	padding: 15px; 
-	border: 1px solid #dedede; 
-	-webkit-border-radius: 0px 25px 0px 25px;
-	border-radius: 0px 25px 0px 25px;
+    border:1px solid #dedede;
+
 }
-    .c2r-button {
-    width: 40%;
-    min-width: 250px;
-    margin: 0 auto;
-    display: block;
+.c2r-button {
+  -webkit-border-radius: 8 !important;
+  -moz-border-radius: 8 !important;
+ border: 0px !important;
+  border-radius: 8px !important;
+  padding: 10px 20px 10px 20px !important;
+  text-decoration: none !important;
+ text-shadow: none !important;
+  width:80%;
+  margin:0 auto;
+  display:block;
+  }
+
+.c2r-button:focus {
+  background: #025786 !important;
+  text-decoration: none !important;
+}
+  .c2r-button:hover {
+  background: #025786 !important;
+  text-decoration: none !important;
 }

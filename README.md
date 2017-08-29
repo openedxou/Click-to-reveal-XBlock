@@ -11,10 +11,9 @@ Available fields:
 This is to try and make the way the button displays as customisable as possible. It defaults to 'Reveal Comment' and 'Hide Comment'.
 
 # Screenshots
+## LMS
+![LMS view](http://i.imgur.com/9HbMVQm.png)
+![LMS view](http://i.imgur.com/YeanqY9.png)
 ## Studio
 ![Studio view](http://i.imgur.com/C3wyytq.png)
 ![Studio view](http://i.imgur.com/M9rxdIp.png)
-
-## LMS
-![LMS view](http://i.imgur.com/9xcG5pX.png)
-![LMS view](http://i.imgur.com/FWEiDDb.png)

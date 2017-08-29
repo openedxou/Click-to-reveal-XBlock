@@ -1,1 +1,1 @@
-from .c2r import Click2RevealXBlock
+from .c2r import click2revealxblock

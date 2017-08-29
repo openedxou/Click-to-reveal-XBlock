@@ -29,15 +29,11 @@ class Click2RevealXBlock(StudioEditableXBlockMixin, XBlock):
     revealText = String(display_name="Text to reveal", multiline_editor='html', resettable_editor=False,
         default="Here is some revealed text.", scope=Scope.settings,
         help="The text to reveal.")
-    bgColour = String(display_name="Background colour", default = "#eef6ff", scope=Scope.settings, help="Background colour for the content.")
-    buttonBGColour = String(display_name="Button colour", default = "#0288d1", scope=Scope.settings, help="Background colour for the button. Requires hex value. Default: #0288d1")
-    buttonTextColour = String(display_name="Button text colour", default = "#ffffff", scope=Scope.settings, help="Background colour for the content. Requires hex value. Default: #ffffff")
-
 
 
 
     # Make fields editable in studio
-    editable_fields = ('display_name', 'showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', 'bgColour', 'buttonBGColour', 'buttonTextColour', )
+    editable_fields = ('display_name', 'showActionLabel', 'hideActionLabel', 'textLabel', 'headingLevel', 'revealText', )
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""

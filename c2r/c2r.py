@@ -8,7 +8,7 @@ from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
 
 
-class Click2RevealXBlock(StudioEditableXBlockMixin, XBlock):
+class click2revealxblock(StudioEditableXBlockMixin, XBlock):
     """
     A simple xblock to reveal html on click.
     """

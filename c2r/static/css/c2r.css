@@ -23,10 +23,10 @@
     background-image: none !important;
 }
 .c2r-button:focus {
-    background: #065683;
-    text-decoration: none;
+    background: #065683 !important;
+    text-decoration: none !important;
 }
 .c2r-button:hover {
-    background: #065683;
-    text-decoration: none;
+    background: #065683 !important;
+    text-decoration: none !important;
 }

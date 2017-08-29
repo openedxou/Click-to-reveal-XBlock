@@ -1,30 +1,31 @@
-.c2r-comment{
-	display: none; 
-	margin-top: 30px;
+.c2r-comment {
+    display: none;
+    margin-top: 30px;
 }
-.c2r-container{
-	padding: 15px; 
-    border:1px solid #dedede;
-
+.c2r-container {
+    padding: 15px;
+    border: 1px solid #dedede;
+    background-color: #eef6ff;
 }
 .c2r-button {
-  -webkit-border-radius: 8 !important;
-  -moz-border-radius: 8 !important;
- border: 0px !important;
-  border-radius: 8px !important;
-  padding: 10px 20px 10px 20px !important;
-  text-decoration: none !important;
- text-shadow: none !important;
-  width:80%;
-  margin:0 auto;
-  display:block;
-  }
-
-.c2r-button:focus {
-  background: #025786 !important;
-  text-decoration: none !important;
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-shadow: none;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    background-color: #0288d1;
 }
-  .c2r-button:hover {
-  background: #025786 !important;
-  text-decoration: none !important;
+.c2r-button:focus {
+    background: #025786;
+    text-decoration: none;
+}
+.c2r-button:hover {
+    background: #025786;
+    text-decoration: none;
 }

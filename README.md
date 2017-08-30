@@ -1,4 +1,4 @@
-# Click-to-reveal-XBlock
+# Click-to-reveal XBlock
 A basic XBlock to reveal some HTML when a button element is clicked. Originally an Open edX 2016 Hackathon project.
 
 Available fields: 
@@ -10,7 +10,7 @@ Available fields:
 
 This is to try and make the way the button displays as customisable as possible. It defaults to 'Reveal Comment' and 'Hide Comment'.
 
-Name for enabling in Studio: 'c2r-xblock'
+Name for enabling in Studio: 'c2r'
 
 # Screenshots
 ## LMS

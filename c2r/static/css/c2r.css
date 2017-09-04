@@ -30,3 +30,13 @@
     background: #065683 !important;
     text-decoration: none !important;
 }
+
+@media print{
+    .c2r-comment{
+        display:block;   
+    }
+    
+    .c2r-button{
+        display:none;   
+    }
+}

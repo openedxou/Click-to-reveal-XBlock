@@ -6,6 +6,9 @@
     padding: 15px;
     border: 1px solid #dedede;
     background-color: #f7f7f7;
+    box-sizing:border-box;
+    width:100%;
+    display:block;
 }
 .c2r-button {
     -webkit-border-radius: 8 !important;

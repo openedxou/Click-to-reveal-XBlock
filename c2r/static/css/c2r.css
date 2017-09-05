@@ -36,7 +36,7 @@
 
 @media print{
     .c2r-comment{
-        display:block;   
+        display:block !important;   
     }
     
     .c2r-button{

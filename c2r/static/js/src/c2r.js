@@ -3,7 +3,7 @@ function C2RBlock(runtime, element, initargs) {
     /* Runtime stuff, nothing here for now */
 }
 
-function showDesc(event, showText, hideText) {
+function c2r(event, showText, hideText) {
     var showFinal = '<i class="fa fa-eye" aria-hidden="true"></i> ' + showText;
     var hideFinal = '<i class="fa fa-eye" aria-hidden="true"></i> ' + hideText;
     var buttonPressed = $(event.target);

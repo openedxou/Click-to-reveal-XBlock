@@ -11,10 +11,10 @@ function c2r(event, showText, hideText) {
     
     comment.slideToggle(200, function() {
         if (comment.is(":hidden")) {
-            buttonPressed.text(showFinal);
+            buttonPressed.html(showFinal);
             buttonPressed.attr("aria-expanded", "false");
         } else {
-            buttonPressed.text(hideFinal);
+            buttonPressed.html(hideFinal);
             buttonPressed.attr("aria-expanded", "true");
         }
     });
